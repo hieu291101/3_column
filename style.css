@@ -1,0 +1,120 @@
+:root{
+    --banner__color1: #e28525;
+    --banner__color2: #016972;
+    --banner__color3: #00403f;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.banner{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.banner__block {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card{
+    min-width: 150px;
+    max-width: 200px;
+    min-height: 300px;
+    flex: 1;
+    height: auto;
+    padding: 4rem;
+    color: white;
+}
+
+.banner__item1{
+    background-color: var(--banner__color1);
+}
+
+.banner__item2{
+    background-color: var(--banner__color2);
+}
+
+.banner__item3{
+    background-color: var(--banner__color3);
+}
+
+.card__heading{
+    font-family: 'Fjalla One';
+    font-weight: 200;
+    opacity: .9;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    margin: .8em 0;
+}
+
+.card__content{
+    min-height: auto;
+    font-family: 'Roboto';
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: .7;
+    line-height: 2.5rem;
+    margin-bottom: 5em;
+}
+
+.card__button{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.4rem;
+    opacity: .9;
+    display: inline-block;
+    padding: 1em 2em;   
+    border: 3px solid white;
+    border-radius: 4rem;
+    background-color: white;
+    transition: ease .5s;
+}
+
+.banner__item1 > .card__button{
+    color: var(--banner__color1);
+}
+
+.banner__item1 > .card__button:hover{
+    color: white;
+    background: var(--banner__color1);
+}
+
+.banner__item2 > .card__button{
+    color: var(--banner__color2);
+}
+
+.banner__item2 > .card__button:hover{
+    color: white;
+    background: var(--banner__color2);
+}
+
+.banner__item3 > .card__button{
+    color: var(--banner__color3);
+}
+
+.banner__item3 > .card__button:hover{
+    color: white;
+    background: var(--banner__color3);
+}
